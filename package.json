@@ -1,0 +1,24 @@
+{
+  "name": "rn-webview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volga-volga/rn-webview.git"
+  },
+  "keywords": [
+    "react-native",
+    "webview",
+    "vvdev"
+  ],
+  "author": "volga-volga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volga-volga/rn-webview/issues"
+  },
+  "homepage": "https://github.com/volga-volga/rn-webview#readme"
+}
