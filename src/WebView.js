@@ -5,13 +5,14 @@ import {View, Text, Animated, TouchableOpacity, Share, Image } from 'react-nativ
 import { WebView } from 'react-native-webview';
 import {Interpolation} from "react-native/Libraries/Animated/src/AnimatedImplementation";
 
-import ReloadIcon from './icons/reload.png';
-import LeftArrowIcon from './icons/left-arrow.png';
-import NextArrowIcon from './icons/next.png';
-import ShareIcon from './icons/share.png';
-import Close from './icons/cancel.png'
-
 import style from './styles';
+
+const ReloadIcon    = Platform.OS === 'ios' ? require('./icons/reload.ios.png') : require('./icons/reload.android.png');
+const LeftArrowIcon = Platform.OS === 'ios' ? require('./icons/left-arrow.ios.png') : require('./icons/left-arrow.android.png');
+const NextArrowIcon = Platform.OS === 'ios' ? require('./icons/next.ios.png') : require('./icons/next.android.png');
+const ShareIcon     = Platform.OS === 'ios' ? require('./icons/share.ios.png') : require('./icons/share.android.png');
+const Close         = Platform.OS === 'ios' ? require('./icons/cancel.ios.png') : require('./icons/cancel.android.png');
+
 
 type Props = {
     source: string,
