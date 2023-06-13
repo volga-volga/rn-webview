@@ -52,16 +52,25 @@ export default class WebViewComponent extends React.PureComponent<Props, State> 
     };
 
     onLoadEndWebView = () => {
+        if (this.props.onLoadEnd) {
+            this.props.onLoadEnd();
+        }
         this.setState({
             isLoad: true,
         })
     };
 
     onLoadProgressWebView = (e) => {
+        if (this.props.onLoadProgress) {
+            this.props.onLoadProgress(e);
+        }
         this.state.animationLoadingProgress.setValue(e.nativeEvent.progress);
     };
 
     onNavigationStateChangeWebView = (e) => {
+        if (this.props.onNavigationStateChange) {
+            this.props.onNavigationStateChange(e);
+        }
         this.setState({
             title: e.url,
         })
